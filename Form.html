@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Validation</title>
+    <title>Document</title>
 </head>
-<body>
-    <form align="center">
+<body style="background-color: grey;">
+    <!-- form validation  -->
+     <center><div style="border: 2px solid black; padding: 20px; width: 400px; border-radius: 30px; background-color: antiquewhite;">
+        <h1>Sign-in account</h1>
+       <form align="center">
         <p id="errname"></p>
-        Enter name : <input type="text" id="name"><
-
-        <p id="errnum"></p>
-        Enter Number : <input type="number" id="num"> 
+        <h3>Enter Name:<h3>
+        <input type="text" id="name"> <br>
         
+        <p id="errnum"></p>
+       <h3>Enter number:</h3>
+        <input type="text" id="num"> <br>
+       
         <p id="erremail"></p>
-        Enter Email : <input type="email" id="email">
+        <h3>Enter Email:</h3>
+        <input type="text" id="email"> <br>
         
         <p id="errpass"></p>
-        Enter Pass : <input type="password" id="pass"> 
-        
+        <h3>Enter password:</h3> 
+        <input type="text" id="pass"> <br>
+       
         <p id="errcpass"></p>
-        enter Cpass : <input type="password" id="cpass">        
+        <h3>Enter confirm password:<h3>
+        <input type="text" id="cpass"><br><br>
+        
+        <input type="submit" value="sign in" onclick="return check()" style="background-color: rgb(255, 81, 0); font-size: large; border-radius:10px; color: white;">
     </form>
+</div></center>   
 </body>
-<script src="Form.js"></script>
+    <script src="./form.js"></script>
 </html>
